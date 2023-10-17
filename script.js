@@ -13,19 +13,7 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(".hero-text", { delay: 200, origin: "top", mobile: true, easing: "ease-in-out" });
+sr.reveal(".hero-text", { delay: 200, origin: "top" });
 sr.reveal(".hero-img", { delay: 450, origin: "top" });
 sr.reveal(".icons", { delay: 200, origin: "left" });
 sr.reveal(".scroll-down", { delay: 200, origin: "right" });
-
-const content = document.querySelector(".content");
-const info = document.querySelector(".info");
-const showInfoButton = document.getElementById("showInfo");
-
-showInfoButton.addEventListener("click", () => {
-  // Toggle the visibility of the info div
-  info.style.display = info.style.display === "block" ? "none" : "block";
-
-  // Toggle the scale of the content div
-  content.style.transform = content.style.transform === "scale(1.2)" ? "scale(1)" : "scale(1.2)";
-});
